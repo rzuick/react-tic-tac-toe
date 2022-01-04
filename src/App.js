@@ -82,12 +82,8 @@ const App = () => {
   const onClickCallback = (id) => {
     let square = squares.map((oneSquareArray) => {
       for (const insideSquare of oneSquareArray) {
-        if (insideSquare.id === id) {
-          if (insideSquare.value) {
-            continue;
-          } else {
+        if (insideSquare.id === id && !insideSqaure.value) {
             insideSquare.value = player;
-          }
         }
       }
       return oneSquareArray;
