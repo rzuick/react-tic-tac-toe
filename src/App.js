@@ -93,11 +93,7 @@ const App = () => {
       !changePlayer();
     }
     if (!winner) {
-      if (player === PLAYER_1) {
-        changePlayer(PLAYER_2);
-      } else if (player === PLAYER_2) {
-        changePlayer(PLAYER_1);
-      }
+     changePlayer( if player === PLAYER_1 ? PLAYER_2 : PLAYER_1
     }
 
     setSquares(square);
